@@ -21,6 +21,16 @@ module.exports = function(environment) {
     cordova: {
       rebuildOnChange: false,
       emulate: false
+    },
+
+    contentSecurityPolicy : {
+      'default-src': "'none'",
+      'script-src': "'self' ", 
+      'font-src': "'self' ", 
+      'connect-src': "'self' ", 
+      'img-src': "'self'",
+      'style-src': "'self' 'unsafe-inline' ", 
+      'media-src': "'self'"
     }
   };
 
